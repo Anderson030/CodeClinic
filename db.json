@@ -17,6 +17,12 @@
       "username": "Anderson",
       "password": "666",
       "role": "TEAM_LEADER"
+    },
+    {
+      "id": "2da9",
+      "username": "jackson",
+      "password": "1234",
+      "role": "CODER"
     }
   ],
   "tickets": [

@@ -1,9 +1,9 @@
-const API_URL = 'http://localhost:3000/tickets';
+const API_URL = 'http://localhost:3001/tickets';
 const user = JSON.parse(localStorage.getItem('user'));
 
 // Si no hay usuario logueado, redirigir
 if (!user) {
-  window.location.href = 'login.html';
+  window.location.href = './views/dashboard.html';
 }
 
 // Mostrar nombre del usuario
