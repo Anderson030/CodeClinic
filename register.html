@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro – CodeClinic</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h2>Registrarse</h2>
+  <form id="register-form">
+    <input type="text" id="register-username" placeholder="Usuario" required>
+    <input type="password" id="register-password" placeholder="Contraseña" required>
+    <select id="register-role" required>
+      <option value="">Selecciona un rol</option>
+      <option value="CODER">CODER</option>
+      <option value="TEAM_LEADER">TEAM LEADER</option>
+    </select>
+    <button type="submit">Registrar</button>
+  </form>
+  <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

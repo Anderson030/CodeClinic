@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeClinic – SOS para coders bloqueados</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>🧩 CodeClinic</h1>
+
+  <!-- Mostrar usuario y logout -->
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <p id="welcome-user" style="font-weight: bold;"></p>
+    <button id="logout-btn">Cerrar sesión</button>
+  </div>
+
+  <!-- Formulario para crear ticket -->
+  <form id="ticket-form">
+    <h2>📌 Crear nuevo ticket</h2>
+    <input type="text" id="title" placeholder="Título del error" required />
+    <select id="type">
+      <option value="JavaScript">JavaScript</option>
+      <option value="CSS">CSS</option>
+      <option value="HTML">HTML</option>
+      <option value="Git">Git</option>
+    </select>
+    <textarea id="description" placeholder="Describe el problema..." required></textarea>
+    <button type="submit">Crear ticket</button>
+  </form>
+
+  <hr>
+
+  <!-- Filtro por tipo -->
+  <label for="filter"><b>Filtrar por tipo:</b></label>
+  <select id="filter">
+    <option value="all">Todos</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="CSS">CSS</option>
+    <option value="HTML">HTML</option>
+    <option value="Git">Git</option>
+  </select>
+
+  <!-- Contenedor de tickets -->
+  <ul id="ticket-list"></ul>
+
+  <!-- JS principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>

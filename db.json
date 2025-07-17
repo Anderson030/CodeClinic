@@ -1,0 +1,57 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "1234",
+      "role": "TEAM_LEADER"
+    },
+    {
+      "id": "399e",
+      "username": "Anderson",
+      "password": "1234",
+      "role": "CODER"
+    },
+    {
+      "id": "ed5f",
+      "username": "Anderson",
+      "password": "666",
+      "role": "TEAM_LEADER"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "7518",
+      "title": "js",
+      "type": "JavaScript",
+      "description": "jd",
+      "createdAt": "2025-07-17T16:13:53.690Z",
+      "comments": [
+        {
+          "author": "Anderson",
+          "text": "Este"
+        },
+        {
+          "author": "admin",
+          "text": "Este"
+        }
+      ]
+    },
+    {
+      "id": "a01c",
+      "title": "Hola",
+      "type": "CSS",
+      "description": "hola",
+      "createdAt": "2025-07-17T16:14:01.842Z"
+    },
+    {
+      "id": "39c8",
+      "title": "123",
+      "type": "HTML",
+      "description": "123",
+      "createdAt": "2025-07-17T17:05:28.768Z",
+      "username": "admin",
+      "comments": []
+    }
+  ]
+}
