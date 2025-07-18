@@ -2,46 +2,64 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodeClinic – SOS para coders bloqueados</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>🧩 CodeClinic</h1>
 
-  <!-- Mostrar usuario y logout -->
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <p id="welcome-user" style="font-weight: bold;"></p>
-    <button id="logout-btn">Cerrar sesión</button>
-  </div>
+  <!-- Encabezado -->
+  <header>
+    <h1>CodeClinic</h1>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <p id="welcome-user"></p>
+      <button id="logout-btn">Cerrar sesión</button>
+    </div>
+  </header>
 
-  <!-- Formulario para crear ticket -->
-  <form id="ticket-form">
-    <h2>📌 Crear nuevo ticket</h2>
-    <input type="text" id="title" placeholder="Título del error" required />
-    <select id="type">
+  <!-- Formulario de ticket -->
+  <section>
+    <form id="ticket-form">
+      <h2>📌 Crear nuevo ticket</h2>
+      <input type="text" id="title" placeholder="Título del error" required />
+      <select id="type">
+        <option value="JavaScript">JavaScript</option>
+        <option value="CSS">CSS</option>
+        <option value="HTML">HTML</option>
+        <option value="Git">Git</option>
+      </select>
+      <textarea id="description" placeholder="Describe el problema..." required></textarea>
+      <button type="submit">Crear ticket</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <!-- Filtro por tipo -->
+  <section>
+    <label for="filter"><b>Filtrar por tipo:</b></label>
+    <select id="filter">
+      <option value="all">Todos</option>
       <option value="JavaScript">JavaScript</option>
       <option value="CSS">CSS</option>
       <option value="HTML">HTML</option>
       <option value="Git">Git</option>
     </select>
-    <textarea id="description" placeholder="Describe el problema..." required></textarea>
-    <button type="submit">Crear ticket</button>
-  </form>
+  </section>
 
-  <hr>
+  <!-- Búsqueda en Stack Overflow (solo para TEAM_LEADER) -->
+  <section id="stackoverflow-search" style="display: none; margin-top: 20px;">
+    <h3>🔍 Buscar en Stack Overflow</h3>
+    <input type="text" id="so-query" placeholder="Escribe tu error o duda" style="width: 70%;">
+    <button onclick="buscarEnStackOverflow()">Buscar</button>
+    <ul id="so-results"></ul>
+  </section>
 
-  <!-- Filtro por tipo -->
-  <label for="filter"><b>Filtrar por tipo:</b></label>
-  <select id="filter">
-    <option value="all">Todos</option>
-    <option value="JavaScript">JavaScript</option>
-    <option value="CSS">CSS</option>
-    <option value="HTML">HTML</option>
-    <option value="Git">Git</option>
-  </select>
+  <!-- Lista de tickets -->
+  <section>
+    <ul id="ticket-list"></ul>
+  </section>
 
-  <!-- Contenedor de tickets -->
-  <ul id="ticket-list"></ul>
 
   <!-- JS principal -->
   <script src="js/main.js"></script>

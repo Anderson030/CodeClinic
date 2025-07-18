@@ -21,35 +21,38 @@
   ],
   "tickets": [
     {
-      "id": "7518",
-      "title": "js",
+      "id": "3f2d",
+      "title": "Error al leer una propiedad de un input",
       "type": "JavaScript",
-      "description": "jd",
-      "createdAt": "2025-07-17T16:13:53.690Z",
-      "comments": [
-        {
-          "author": "Anderson",
-          "text": "Este"
-        },
-        {
-          "author": "admin",
-          "text": "Este"
-        }
-      ]
+      "description": "Estoy intentando acceder al valor de un input usando document.getElementById('input').value, pero me lanza un error de que no puede leer 'value' de undefined.\n\nCannot read properties of undefined (reading 'value') JavaScript",
+      "createdAt": "2025-07-18T01:57:11.902Z",
+      "username": "admin",
+      "comments": []
     },
     {
-      "id": "a01c",
-      "title": "Hola",
-      "type": "CSS",
-      "description": "hola",
-      "createdAt": "2025-07-17T16:14:01.842Z"
+      "id": "eade",
+      "title": "Error al parsear respuesta con fetch",
+      "type": "JavaScript",
+      "description": "Estoy usando fetch().then(res => res.json()) pero me da error al convertir a JSON. Me dice que hay un símbolo \"<\" inesperado.",
+      "createdAt": "2025-07-18T01:57:46.283Z",
+      "username": "admin",
+      "comments": []
     },
     {
-      "id": "39c8",
-      "title": "123",
-      "type": "HTML",
-      "description": "123",
-      "createdAt": "2025-07-17T17:05:28.768Z",
+      "id": "9275",
+      "title": "Error de sintaxis por código incompleto",
+      "type": "JavaScript",
+      "description": "Me lanza este error al cargar la app. Creo que olvidé cerrar un bloque de código o una función.",
+      "createdAt": "2025-07-18T01:58:21.014Z",
+      "username": "admin",
+      "comments": []
+    },
+    {
+      "id": "6b7c",
+      "title": "Usuario no autenticado al refrescar.",
+      "type": "JavaScript",
+      "description": "Uso localStorage para guardar el usuario, pero al refrescar la página se pierde o me da null.\n\n",
+      "createdAt": "2025-07-18T01:58:38.773Z",
       "username": "admin",
       "comments": []
     }
